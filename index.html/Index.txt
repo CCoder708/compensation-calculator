@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compensation Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Compensation Calculator</h1>
+    </header>
+
+    <main>
+        <!-- Input Section -->
+        <section class="input-section">
+            <h2>Enter Details</h2>
+            <div class="input-row">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Name">
+            </div>
+            <div class="input-row">
+                <label for="total-points">Total Points</label>
+                <input type="number" id="total-points" placeholder="0.000">
+            </div>
+            <div class="input-row">
+                <label for="final-price">UWM Final Price</label>
+                <input type="number" id="final-price" placeholder="0.000">
+            </div>
+            <div class="input-row">
+                <label for="price-for-calc">Price for Calc</label>
+                <input type="number" id="price-for-calc" placeholder="0.000">
+            </div>
+        </section>
+
+        <!-- Loan Amount Section -->
+        <section class="loan-section">
+            <h2>Loan Amount</h2>
+            <div class="checkbox-row">
+                <label><input type="checkbox" id="waive-uw-fee"> Waive UW Fee</label>
+                <label><input type="checkbox" id="waive-wire-fee"> Waive Wire Fee</label>
+            </div>
+            <div class="loan-row">
+                <label for="loan-amount">Enter Loan Amount</label>
+                <input type="number" id="loan-amount" placeholder="0.000">
+            </div>
+        </section>
+
+        <!-- Tiers Section -->
+        <section class="tiers-section">
+            <h2>Tiers</h2>
+            <div class="tier-row">
+                <p>Tier 1 (75)</p>
+                <p id="tier1-amount">$0.00</p>
+            </div>
+            <div class="tier-row">
+                <p>Tier 2 (85)</p>
+                <p id="tier2-amount">$0.00</p>
+            </div>
+            <div class="tier-row">
+                <p>Tier 3 (95)</p>
+                <p id="tier3-amount">$0.00</p>
+            </div>
+        </section>
+
+        <!-- Monthly Tiers -->
+        <section class="monthly-tiers-section">
+            <h2>Monthly Tiers</h2>
+            <div class="monthly-tier-row">
+                <p>Monthly Tier 1 (< $999,999)</p>
+                <p id="monthly-tier1">$0</p>
+            </div>
+            <div class="monthly-tier-row">
+                <p>Monthly Tier 2 ($1,000,000 - $2,999,999)</p>
+                <p id="monthly-tier2">$0</p>
+            </div>
+            <div class="monthly-tier-row">
+                <p>Monthly Tier 3 (> $2,999,999)</p>
+                <p id="monthly-tier3">$0</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Disclaimer: This is a quick compensation tool. This does not represent actual pay.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
